@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Hobbies</title>
+
+        <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+       <link rel="stylesheet" type="text/css" href="style.css">
+<!-- Optional theme -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+<!-- Latest compiled and minified JavaScript -->
+
+
+    </head>
+    <body>
+        <h1><big> Hobbies</big></h1>
+
+
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/20822071/0294992001467356576_filepicker.jpg" style="width:100%" data-toggle="tooltip" data-placement="bottom" title="Football is my favorite sport and a hobby that I really enjoy. Odell Beckham Jr., a receiver who plays for the New York Giants, had inspired me to play this sport and now I play it all my life.The feeling that I get when I play is so great! ">
+  <img class="mySlides" src="http://68.media.tumblr.com/b1bdda7405f3d9913c0afdb1fb07ac14/tumblr_oenod7pV1j1u1clgwo1_1280.jpg" style="width:100%" data-toggle="tooltip" data-placement="bottom" title="The image above is the show Arrow, which is only one of the many shows that I watch in my free time.Arrow is very exciting and entertaining and it airs on CW. ">
+  <img class="mySlides" src="https://static1.comicvine.com/uploads/original/11130/111301249/5466955-5319785-7665280930-arrow.jpg" style="width:100%" data-toggle="tooltip" data-placement="bottom" title="The image above is of the show The Flash, which is another show that I watch in my free time. ">
+  <img class="mySlides" src="https://static01.nyt.com/images/2016/02/29/sports/basketball/STEPHCURRY/STEPHCURRY-articleLarge.jpg" style="width:100%" data-toggle="tooltip" data-placement="bottom" title="Another hobby that is a big part of my life is basketball. I've been playing it since I was a little kid and I will continue playing it for the rest of my life. Steph Curry really represents a player who I strive to become like. ">
+  <img class="mySlides" src="https://c.slashgear.com/wp-content/uploads/2014/03/TDYv7Ol.jpg" style="width:100%" data-toggle="tooltip" data-placement="bottom" title="The image above shows a PS4 set, which is another hobby that I have. A PS4 is a game console in which you can play others in different sorts of games. I play with my brother a lot and also with my friends. ">
+  
+  
+  
+
+
+
+
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<a href="index.html"> <button id="homebutton">home</button> </a>
+
+    </body>
+</html>
+  <style>
+    body {
+    background-size:auto 100%;
+    background:linear-gradient(black,blue,white)
+}
+</style>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
